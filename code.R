@@ -220,7 +220,7 @@ rgl::clear3d()
 elev_matrix %>% 
   sphere_shade(texture = "imhof4") %>% 
   add_water(watermap, color = "imhof4") %>%
-  add_overlay(overlay_img, alphalayer = 0.5) %>%
+  add_overlay(overlay_img3, alphalayer = 0.75) %>%
   add_shadow(raymat, max_darken = 0.5) %>%
   add_shadow(ambmat, max_darken = 0.5) %>%
   plot_3d(elev_matrix, zscale = zscale, windowsize = c(1200, 1000),
